@@ -47,6 +47,11 @@ function RundeBeenden(){
     if(sadr===3){
         Auswertung()
     }
+    if(sadr<3) {
+        document.getElementById("sadr").innerHTML = "Spieler" + sadr + " ist an der Reihe."
+    }else{
+        document.getElementById("sadr").innerHTML= "AUSWERTUNG"
+    }
 }
 
 function Auswertung(){
